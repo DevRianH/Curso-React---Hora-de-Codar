@@ -1,0 +1,12 @@
+/*EXEMPLO DE CSS MODULE, QUE SÃO UTILIZADOS PELA CLASSE ESPECIFICA*/
+
+.fraseContainer {
+    background-color: #e44747;
+    border: 5px solid #111;
+}
+
+.fraseContent {
+    color: #fff;
+    background-color: #333;
+    margin: 0;
+}
