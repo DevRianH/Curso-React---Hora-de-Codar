@@ -1,27 +1,20 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld.js'
-import Frase from "./components/Frase";
+import {SayMyName} from "./components/SayMyName";
+import {Pessoa} from "./components/Pessoa";
 
-function App() {
+export function App() {
 
-    const name = 'Rian'
-
-    const newName = name.toUpperCase();
-
-    function sum(a,b){
-        return a + b
-    }
-
+    const nome = "Henrique"
 
     return (
         <div className="App">
-            <h2>Alterando o JSX</h2>
-            <p>Olá {newName}</p>
-            <p>Soma: {sum(5,2)}</p>
-            <HelloWorld/>
-            <Frase/>
+            <SayMyName nome="Rian"/>
+            <SayMyName nome={nome}/>
+            <Pessoa
+                nome="Ezequias"
+                idade="24 anos"
+                profissao="Programador"
+            />
         </div>
     );
 }
-
-export default App;
